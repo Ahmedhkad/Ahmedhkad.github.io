@@ -1,0 +1,187 @@
+
+
+/* .someImage{
+  clip-path: circle(25%);  //Shaping image profile
+  clip-path: polygon(0 0,100% 0, 0 0);
+  clip-path: polygon(0 0,100% 0, 0 0, calc(100% - 20vw), 0 100%);   //stable angle
+  margin-bottom: -20vw;                       //for this 20 sucks color bg
+} */
+
+
+/*
+*{
+  box-sizing: border-box;
+  padding: 0;
+}
+
+
+.needtoplay {
+ background: orange;
+  width: 15em;
+  height: 15em;
+  float: left;
+  /* margin:  0 1em 1em 0
+  shape-margin: 1em; */
+  /* shape-outside: ellipse(30% 30%);
+  clip-path: ellipse(30% 30%);
+} */
+.intro{
+  box-sizing: border-box;
+  padding: 0;
+margin-top: 50px;
+font-family: "Oswald", sans-serif;
+
+}
+.intro-image{
+  opacity: 35%;
+  width: 15em;
+  margin-left: 5%;
+  margin-bottom: -4px;
+  float: left;
+  shape-outside: polygon(73.46% -6.68%, 96.39% 8.55%, 96.00% 77.32%, 117.78% 98.57%, 84px 98.09%, 49.26% 76.84%, 48.82% 7.59%);
+clip-path: polygon(58.89% -6.69%, 91.67% 10.93%, 92.56% 74.45%, 126.11% 100.48%, -10px 100%, 20.77% 75.41%, 21.45% 10.93%);
+}
+.intro-title{
+  color: black;
+  margin-right: 5%;
+}
+
+.intro-title > h1{
+  font-size: xx-large;
+}
+.intro-title > a{
+  float: right;
+}
+
+
+.list-skill ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.list-skill li {
+    background-color: #ffffff;
+    border-top: 1px solid #f1f1f1;
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.05);
+    clear: both;
+    margin: 0 0 10px;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 4px 0 0 4px;
+}
+.list-skill a {
+    font-family: "Open Sans",sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+    cursor: default;
+}
+
+.list-skill li span.skill-title {
+
+    color: #303030;
+    float: left;
+    font-weight: bold;
+    height: auto;
+    line-height: 30px;
+    margin: 0;
+  margin-left: 20px;
+    padding: 0;
+    text-align: left;
+    width: 120px;
+    position: relative;
+}
+
+
+.meter {
+  margin: 4px 40px 0px 171px;
+    height: 13px;
+    position: relative;
+    background: #ffffff;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 0px;
+    border: solid;
+    padding: 0px;
+	box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+}
+.meter > span {
+  display: block;
+  height: 100%;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  background-color: rgb(0 0 0);
+  background-image: linear-gradient(
+    center bottom,
+    rgb(43,194,83) 37%,
+    rgb(84,240,84) 69%
+  );
+  box-shadow:
+    inset 0 2px 9px  rgba(255,255,255,0.3),
+    inset 0 -2px 6px rgba(0,0,0,0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+
+.group-circles{
+  padding-top: 20px;
+  display: grid;
+grid-template-columns: auto auto auto;
+}
+
+.circle{
+  margin: auto;
+}
+.percent svg {
+  position: relative;
+     width: 117px;
+     height: 104px;
+     transform: rotate(-85deg);
+}
+.percent svg circle {
+  width: 100%;
+     height: 100%;
+     fill: none;
+     stroke: #303030;
+     stroke-width: 12px;
+     stroke-linecap: round;
+     transform: translate(19px, 12px);
+}
+.percent svg circle:nth-child(2) {
+ stroke-dasharray: 440;
+ stroke-dashoffset: 440;
+}
+.circle svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440px - (440px * 88) / 100);
+ stroke: #fff;
+ stroke-width: 9px;
+}
+
+.percent svg circle:nth-child(3) {
+ stroke-dasharray: 440;
+ stroke-dashoffset: 440;
+}
+.circle svg circle:nth-child(3) {
+  stroke-dashoffset: calc(440px - (440px * 48) / 100);
+ stroke: #000;
+ stroke-width: 7px;
+}
+
+.number{
+  position: relative;
+  color: black;
+    top: -79px;
+    left: 40px;
+    width: 95%;
+    height: 100%;
+    border-radius: 50%;
+    z-index: -1;
+}
+.percent > p {
+  position: relative;
+    top: -55px;
+    left: 42px;
+    color: black;
+}

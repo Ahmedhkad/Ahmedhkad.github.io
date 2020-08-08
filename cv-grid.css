@@ -1,0 +1,96 @@
+
+body {
+  /* font-family: "Inter", sans-serif; */
+  font-family: "Open Sans",sans-serif;
+}
+
+.cv-grid {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: 1.5fr auto auto auto auto 0.8fr;
+  grid-template-areas:
+    "intro intro"
+    "experience pro-skill "
+    "experience design-skill "
+    "activity portfolio"
+    "education language"
+    "contact downloads"
+    "footer footer";
+
+
+  grid-gap: 0.2rem;
+  font-weight: 800;
+  /* text-transform: uppercase; */
+  font-size: 12px;
+  color: #004d40;
+  /* text-align: center; */
+}
+
+#intro {
+  grid-area: intro;
+  background: #d7d7d7;
+  color: #fff;
+
+}
+
+#experience {
+  grid-area: experience;
+}
+
+#pro-skill {
+  grid-area: pro-skill;
+}
+
+#design-skill {
+  grid-area: design-skill;
+}
+
+#activity {
+  grid-area: activity;
+}
+
+#education {
+  grid-area: education;
+}
+
+#language {
+  grid-area: language;
+}
+
+#portfolio {
+  grid-area: portfolio;
+
+}
+#contact {
+  grid-area: contact;
+}
+#downloads {
+  grid-area: downloads;
+}
+
+footer {
+  grid-area: footer;
+    background: #303030;
+    color: #fff;
+  text-align: center;
+}
+
+@media only screen and (max-width: 776px) {
+  .cv-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr auto auto auto auto 0.8fr;
+    grid-template-areas:
+      "intro"
+      "experience"
+      "pro-skill"
+      "design-skill"
+      "activity"
+      "portfolio"
+      "education"
+      "language"
+      "contact"
+      "downloads"
+      "footer";
+  }
+}
