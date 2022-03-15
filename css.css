@@ -1,46 +1,24 @@
-
-
-/* .someImage{
-  clip-path: circle(25%);  //Shaping image profile
-  clip-path: polygon(0 0,100% 0, 0 0);
-  clip-path: polygon(0 0,100% 0, 0 0, calc(100% - 20vw), 0 100%);   //stable angle
-  margin-bottom: -20vw;                       //for this 20 sucks color bg
-} */
-
-
-/*
-*{
-  box-sizing: border-box;
-  padding: 0;
+body {
+max-width: 1360px;
+margin: auto;
 }
 
-
-.needtoplay {
- background: orange;
-  width: 15em;
-  height: 15em;
-  float: left;
-  /* margin:  0 1em 1em 0
-  shape-margin: 1em; */
-  /* shape-outside: ellipse(30% 30%);
-  clip-path: ellipse(30% 30%);
-} */
 .intro{
   box-sizing: border-box;
   padding: 0;
-margin-top: 50px;
-font-family: "Oswald", sans-serif;
-
+  margin-top: 30px;
+  font-family: "Oswald", sans-serif;
 }
+
 .intro-image{
-   
   width: 15em;
   margin-left: 5%;
   margin-bottom: -4px;
   float: left;
   shape-outside: polygon(73.46% -6.68%, 96.39% 8.55%, 96.00% 77.32%, 117.78% 98.57%, 84px 98.09%, 49.26% 76.84%, 48.82% 7.59%);
-clip-path: polygon(58.89% -6.69%, 91.67% 10.93%, 92.56% 74.45%, 126.11% 100.48%, -10px 100%, 20.77% 75.41%, 21.45% 10.93%);
+  clip-path: polygon(58.89% -6.69%, 91.67% 10.93%, 92.56% 74.45%, 126.11% 100.48%, -10px 100%, 20.77% 75.41%, 21.45% 10.93%);
 }
+
 .intro-title{
   color: black;
   margin-right: 5%;
@@ -48,12 +26,117 @@ clip-path: polygon(58.89% -6.69%, 91.67% 10.93%, 92.56% 74.45%, 126.11% 100.48%,
 
 .intro-title > h1{
   font-size: xx-large;
+  margin-bottom: 0px;
 }
-.intro-title > a{
-  float: right;
+
+.intro-title > h3{
+  font-size: x-large;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.intro-title > p{
+  font-size: large;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+#intro > div > div.intro-title > a{
+
+  position:absolute;                 
+  bottom:0;                         
+  right:0;
 }
 
 
+
+.container{
+  max-width: 1000px;
+  margin: auto;
+}
+
+.container > h2 {
+  font-family: "Open Sans",sans-serif;
+  color: #303030;
+  margin: auto;
+  text-align: left;
+  font-size: 22px;
+  text-transform:  uppercase;
+  position: relative;
+  /* max-width: 400px; */
+
+     padding-right: 5px;
+     padding-left: 17px;
+
+}
+.container > h2:after{
+  color: #303030;
+  content: "";
+  display: block;
+      width: 85%;
+  height: 2px;
+  position: absolute;
+  background: black;
+  right:0;
+  top: 50%;
+  z-index: -2;
+  margin-right: 10px;
+}
+span{
+  background: white;
+  padding-right: 20px;
+}
+
+/* --------------------------------------------------------------- Experience */
+.list-event ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.list-event li {
+    background-color: #ffffff;
+    border-top: 1px solid #f1f1f1;
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.05);
+    clear: both;
+    margin: 0 0 10px;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 4px 0 0 4px;
+}
+.list-event a {
+    font-family: "Open Sans",sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+    cursor: default;
+}
+
+.list-event li span.event-date {
+    text-transform: uppercase;
+    color: #303030;
+    float: left;
+    font-weight: bold;
+    height: auto;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    width: 116px;
+}
+
+.list-event li h3 {
+    color: #303030;
+    font-weight: normal;
+    height: auto;
+    line-height: 30px;
+    overflow: hidden;
+    margin:0;
+    padding: 0 5px 0 20px;
+    font-size: 13px;
+}
+
+
+
+/* --------------------------------------------------------------- Programing Skill */
 .list-skill ul {
     list-style: none;
     padding: 0;
@@ -125,10 +208,12 @@ clip-path: polygon(58.89% -6.69%, 91.67% 10.93%, 92.56% 74.45%, 126.11% 100.48%,
 }
 
 
+/* --------------------------------------------------------------- circle */
 .group-circles{
   padding-top: 20px;
   display: grid;
 grid-template-columns: auto auto auto;
+justify-content: space-evenly;
 }
 
 .circle{
@@ -164,7 +249,7 @@ grid-template-columns: auto auto auto;
  stroke-dashoffset: 440;
 }
 .circle svg circle:nth-child(3) {
-  stroke-dashoffset: calc(440px - (440px * 48) / 100);
+  stroke-dashoffset: calc(440px - (440px * 38) / 100);
  stroke: #000;
  stroke-width: 7px;
 }
@@ -182,6 +267,13 @@ grid-template-columns: auto auto auto;
 .percent > p {
   position: relative;
     top: -55px;
-    left: 42px;
+    text-align-last: center;
     color: black;
+}
+
+
+
+
+@media only screen and (max-width: 776px) {
+ 
 }

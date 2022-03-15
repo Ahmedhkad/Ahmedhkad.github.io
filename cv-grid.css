@@ -28,6 +28,7 @@ body {
 }
 
 #intro {
+  position: relative;
   grid-area: intro;
   background: #d7d7d7;
   color: #fff;
