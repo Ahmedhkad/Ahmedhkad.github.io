@@ -13,9 +13,9 @@ body {
     "intro intro"
     "experience pro-skill "
     "experience design-skill "
-    "activity portfolio"
-    "education language"
-    "contact downloads"
+    "experience portfolio "
+    "activity language"
+    "education contact"
     "footer footer";
 
 
@@ -86,12 +86,11 @@ footer {
       "experience"
       "pro-skill"
       "design-skill"
-      "activity"
       "portfolio"
+      "activity"
       "education"
       "language"
       "contact"
-      "downloads"
       "footer";
   }
 }
