@@ -289,7 +289,7 @@ span {
   color: black;
 }
 
-/* ------------------------------------------------------ Cards */
+/* ------------------------------------------------------ Cards - portfolio */
 .card-wrapper {
   list-style: none;
   padding: 0;
@@ -325,13 +325,11 @@ span {
   margin-left: 1rem;
   margin-right: 1rem;
 }
-.card > :last-child {
-  margin-bottom: 0;
-}
-.card:hover,
+
+/* .card:hover,
 .card:focus-within {
   filter: none !important;
-}
+} */
 
 .card .card-title {
   margin-top: 0.2rem;
@@ -346,6 +344,10 @@ span {
   display: inline-block;
   font-size: 1.14em;
 }
+.card-link:hover{
+  color: blue;
+  font-style: italic;
+}
 
 .card-title-btn {
   color: #303030;
@@ -357,6 +359,16 @@ span {
   border-style: none;
   text-decoration: none;
   padding: 4px 10px 4px 10px;
+}
+
+.card-title-btn:hover {
+  box-shadow: 0 0 6px 0 blue inset;
+}
+
+
+.card-title-btn-img {
+  width:13px !important;
+  height:13px;
 }
 
 .card p {
@@ -394,5 +406,9 @@ span {
   border: 1px;
 }
 
-@media only screen and (max-width: 776px) {
+
+/* ------------------- Contact */
+
+.address{
+  cursor: pointer  ;
 }

@@ -10,13 +10,13 @@ body {
   grid-template-columns: 1fr 1fr ;
   grid-template-rows: 1.5fr auto auto auto auto 0.8fr;
   grid-template-areas:
-    "intro intro"
-    "experience pro-skill "
-    "experience design-skill "
-    "experience portfolio "
-    "activity language"
-    "education contact"
-    "footer footer";
+    "intro      intro"
+    "experience pro-skill  "
+    "experience portfolio  "
+    "design-skill portfolio"
+    "activity   language"
+    "education  contact"
+    "footer     footer";
 
 
   grid-gap: 0.2rem;
